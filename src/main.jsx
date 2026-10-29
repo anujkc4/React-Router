@@ -9,6 +9,7 @@ import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
 import User from "./components/user.jsx";
 import Github from "./components/github.jsx";
+// import githubInfoLoader from "./components/github.jsx";
 
 // two ways of using router
 // first way
@@ -38,7 +39,9 @@ const router = createBrowserRouter([
         path: "User/:id",
         element: <User />,
       },
+      // we can also use loaded to pass even api or use fetch
       {
+        // loader: githubInfoLoader,
         path: "github",
         element: <Github />,
       },
